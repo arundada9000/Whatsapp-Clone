@@ -1,0 +1,82 @@
+[
+  {
+    "id":1,
+    "src": "https://randomuser.me/api/portraits/women/68.jpg",
+    "name": "Aisha Khan",
+    "date": "12:45 PM",
+    "lastMessage": "Sure, let me check and get back to you.Sure, let me check and get back to you.Sure, let me check and get back to you.Sure, let me check and get back to you.",
+    "status": "seen"
+  },
+  {
+    "id":2,
+    "src": "https://randomuser.me/api/portraits/men/45.jpg",
+    "name": "Carlos Mendes",
+    "date": "11:30 AM",
+    "lastMessage": "On my way!",
+    "status": "delivered"
+  },
+  {
+    "id":3,
+    "src": "https://randomuser.me/api/portraits/women/22.jpg",
+    "name": "Mei Ling",
+    "date": "Yesterday",
+    "lastMessage": "That sounds perfect. Let's do it.",
+    "status": "seen"
+  },
+  {
+    "id":4,
+    "src": "https://randomuser.me/api/portraits/men/12.jpg",
+    "name": "Liam O'Connor",
+    "date": "Yesterday",
+    "lastMessage": "Haha, true that 😂",
+    "status": "sent"
+  },
+  {
+    "id":5,
+    "src": "https://randomuser.me/api/portraits/women/55.jpg",
+    "name": "Zara Sheikh",
+    "date": "Fri",
+    "lastMessage": "I'll send the file tonight.",
+    "status": "delivered"
+  },
+  {
+    "id":6,
+    "src": "https://randomuser.me/api/portraits/men/33.jpg",
+    "name": "Noah Kim",
+    "date": "Thu",
+    "lastMessage": "Did you get a chance to review the doc?",
+    "status": "seen"
+  },
+  {
+    "id":7,
+    "src": "https://randomuser.me/api/portraits/women/40.jpg",
+    "name": "Sofia Rossi",
+    "date": "Wed",
+    "lastMessage": "Meeting at 3pm, don’t be late!",
+    "status": "sent"
+  },
+  {
+    "id":8,
+    "src": "https://randomuser.me/api/portraits/men/21.jpg",
+    "name": "Aditya Verma",
+    "date": "Tue",
+    "lastMessage": "Call me when you're free.",
+    "status": "delivered"
+  },
+  {
+    "id":9,
+    "src": "https://randomuser.me/api/portraits/women/18.jpg",
+    "name": "Emily Clarke",
+    "date": "Mon",
+    "lastMessage": "Thanks again for your help!",
+    "status": "seen"
+  },
+  {
+    "id":10,
+    "src": "https://randomuser.me/api/portraits/men/66.jpg",
+    "name": "Jamal Peterson",
+    "date": "Sun",
+    "lastMessage": "Got it. Will update soon.",
+    "status": "sent"
+  }
+]
