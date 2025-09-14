@@ -1,4 +1,4 @@
-# YouTube Clone
+# Whatsapp Clone
 
 A whatsapp clone built with **Reactjs** to learn tailwind, routing ,nested-routing, custom hook and overall design sense. This project replicates core whatsapp ui and overall props drilling, components, modularity and mainly for my tailwind, reactjs with vite practice and vercel deployments . Its not responsive so watch it in desktop .
 
