@@ -53,7 +53,7 @@ const FullChat = ({
   return (
     <div
       className="fixed top-[41px] left-[400px] right-0 bottom-0 flex flex-col text-white 
-    bg-[url('chat-backgrounds/chat-bg.jpg')] bg-cover bg-center
+    bg-[url('/chat-backgrounds/chat-bg.jpg')] bg-cover bg-center
     "
     >
       <div className="flex items-center justify-between bg-[rgba(44,44,44,255)] p-3">
