@@ -34,7 +34,13 @@ const UserChats = ({ fullChatData, setFullChatData }) => {
   return (
     <div className="flex flex-col py-3">
       {data.map((message) => {
-        const { id, src, name, date, status, lastMessage } = message;
+        const { id, src, name, date, status, messages } = message;
+        console.log(messages);
+
+        const lastMessage =
+          messages.length > 0
+            ? messages[messages.length - 1].text
+            : "Start a conversation";
         return (
           <div
             onClick={() => setFullChatData(message)}
@@ -54,17 +60,21 @@ const UserChats = ({ fullChatData, setFullChatData }) => {
                 <div>{date}</div>
               </div>
               <div className="flex items-center gap-1 overflow-hidden">
-                <div className="flex items-center justify-center flex-shrink-0">
-                  {status === "seen" ? (
-                    <IoCheckmarkDoneOutline
-                      style={{ fontSize: "20px", color: "green" }}
-                    />
-                  ) : status === "delivered" ? (
-                    <IoCheckmarkDoneOutline style={{ fontSize: "20px" }} />
-                  ) : (
-                    <IoCheckmark style={{ fontSize: "20px" }} />
+                {messages.length > 0 &&
+                  messages[messages.length - 1].from !== "me" && (
+                    <div className="flex items-center justify-center flex-shrink-0">
+                      {status === "seen" ? (
+                        <IoCheckmarkDoneOutline
+                          style={{ fontSize: "20px", color: "green" }}
+                        />
+                      ) : status === "delivered" ? (
+                        <IoCheckmarkDoneOutline style={{ fontSize: "20px" }} />
+                      ) : (
+                        <IoCheckmark style={{ fontSize: "20px" }} />
+                      )}
+                    </div>
                   )}
-                </div>
+
                 <div className="truncate text-gray-400 text-sm flex-1 max-w-[200px]">
                   {lastMessage}
                 </div>

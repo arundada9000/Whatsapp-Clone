@@ -7,6 +7,8 @@ import { PiMicrophoneLight } from "react-icons/pi";
 import { AiOutlinePaperClip } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLockClosedOutline } from "react-icons/io5";
+import { IoCheckmark } from "react-icons/io5";
+import { IoCheckmarkDoneOutline } from "react-icons/io5";
 
 const FullChat = ({
   fullChatData = {
@@ -19,7 +21,7 @@ const FullChat = ({
     setFullChatData(fullChatData);
   }, [fullChatData, setFullChatData]);
 
-  const { src, name } = fullChatData;
+  const { src, name, messages } = fullChatData;
 
   if (fullChatData.length === 0)
     return (
@@ -50,6 +52,7 @@ const FullChat = ({
         </div>
       </div>
     );
+
   return (
     <div
       className="fixed top-[41px] left-[400px] right-0 bottom-0 flex flex-col text-white 
@@ -95,7 +98,64 @@ const FullChat = ({
       </div>
 
       {/* Messages */}
-      <div>Messages will appear Here</div>
+      <div className="p-4 overflow-auto pb-14">
+        {messages.length === 0 ? (
+          <div className="text-center text-gray-400 mt-10">
+            Start a conversation
+          </div>
+        ) : (
+          messages.map((message, index) => {
+            const { from, text, time, status } = message;
+
+            return (
+              <div
+                key={index}
+                className={`flex w-full mb-2 ${
+                  from === "me" ? "justify-end" : "justify-start"
+                }`}
+              >
+                <div
+                  className={`relative
+              max-w-[600px]
+              w-fit
+              px-4 py-2
+              rounded-md
+              text-md
+              break-words
+              ${
+                from === "me"
+                  ? "bg-[rgba(0,92,75,255)] text-white"
+                  : "bg-[rgba(53,53,53,255)] text-white"
+              }
+              pr-22
+            `}
+                >
+                  {text}
+                  <div className="absolute bottom-[8px] right-[20px] text-[12px] text-gray-300">
+                    {time}
+                  </div>
+                  {from === "me" && (
+                    <div className="absolute bottom-[8px] right-[5px]">
+                      {status === "seen" ? (
+                        <IoCheckmarkDoneOutline
+                          style={{
+                            fontSize: "15px",
+                            color: "rgba(30,127,133,255)",
+                          }}
+                        />
+                      ) : status === "delivered" ? (
+                        <IoCheckmarkDoneOutline style={{ fontSize: "15px" }} />
+                      ) : (
+                        <IoCheckmark style={{ fontSize: "15px" }} />
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })
+        )}
+      </div>
 
       <div className="fixed bottom-0 right-0 left-[400px] bg-[rgba(44,44,44,255)] p-1 flex items-center">
         <div className="flex items-center justify-center p-3 cursor-pointer hover:bg-[rgba(64,64,64,255)] rounded-md">

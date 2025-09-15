@@ -2,66 +2,1000 @@
   {
     "id":1,
     "src": "https://randomuser.me/api/portraits/women/68.jpg",
-    "name": "Aisha Khan",
+    "name": "Pooja Pandey",
     "date": "12:45 PM",
-    "lastMessage": "Sure, let me check and get back to you.Sure, let me check and get back to you.Sure, let me check and get back to you.Sure, let me check and get back to you.",
+    "lastMessage": "Good Night",
+    "status": "seen",
+    "messages": [
+  {
+    "from": "me",
+    "text": "Hey, did you reach home safely? 😊",
+    "time": "10:12 PM",
     "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Yesss, just got in bed 🛏️",
+    "time": "10:13 PM"
+  },
+  {
+    "from": "them",
+    "text": "Missing you already 🥺",
+    "time": "10:14 PM"
+  },
+  {
+    "from": "me",
+    "text": "Same here 💔 the day feels incomplete without your goodnight hug 😔",
+    "time": "10:15 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Aww stop it 😩 you're gonna make me cryy",
+    "time": "10:16 PM"
+  },
+  {
+    "from": "me",
+    "text": "Haha nooo crying not allowed 😅 only cuddles and smiles 🥰",
+    "time": "10:17 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "You're too cute for your own good, you know that? 😘",
+    "time": "10:18 PM"
+  },
+  {
+    "from": "me",
+    "text": "I try 😎 but you win in the cute department every time 💯",
+    "time": "10:19 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Shut up 😤 don’t make me blush at 10:20 PM like a teenager",
+    "time": "10:20 PM"
+  },
+  {
+    "from": "me",
+    "text": "Too late, you’re already blushing 😉",
+    "time": "10:20 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Stop reading my mind 😫",
+    "time": "10:21 PM"
+  },
+  {
+    "from": "them",
+    "text": "I wish you were here right now...",
+    "time": "10:22 PM"
+  },
+  {
+    "from": "me",
+    "text": "I’d be holding your hand, playing with your hair, telling you how lucky I am 🥺❤️",
+    "time": "10:23 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Okay that’s it 😭 you’re the reason I can’t sleep without smiling",
+    "time": "10:24 PM"
+  },
+  {
+    "from": "me",
+    "text": "And you're the reason my heart feels full every night 💤",
+    "time": "10:25 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Why are you like this 😭💞",
+    "time": "10:26 PM"
+  },
+  {
+    "from": "me",
+    "text": "Because you make me soft 😩",
+    "time": "10:27 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Ughh you're not allowed to be this adorable after 10 PM",
+    "time": "10:27 PM"
+  },
+  {
+    "from": "me",
+    "text": "Oops, too late 😜",
+    "time": "10:28 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Okay, time to sleep now before we end up texting till 3 again 🥱",
+    "time": "10:29 PM"
+  },
+  {
+    "from": "me",
+    "text": "Fineee 😔 but only if you promise to dream about me",
+    "time": "10:30 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Always. Goodnight my love 💕",
+    "time": "10:31 PM"
+  },
+  {
+    "from": "me",
+    "text": "Goodnight jaan. I love you 😘",
+    "time": "10:32 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Goodnight. Take Care.",
+    "time": "10:32 PM"
+  }
+]
+
   },
   {
     "id":2,
     "src": "https://randomuser.me/api/portraits/men/45.jpg",
-    "name": "Carlos Mendes",
+    "name": "Sunil Besto",
     "date": "11:30 AM",
-    "lastMessage": "On my way!",
+    "lastMessage": "Love you too, idiot 🖤",
+    "status": "delivered",
+    "messages": [
+  {
+    "from": "me",
+    "text": "Bro where tf are you? 🧐",
+    "time": "9:02 AM",
     "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Relax baba, I’m literally 2 mins away 😭",
+    "time": "9:03 AM"
+  },
+  {
+    "from": "me",
+    "text": "You said that 20 mins ago also 😐",
+    "time": "9:04 AM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Ok but traffic was vibing today 😤",
+    "time": "9:05 AM"
+  },
+  {
+    "from": "me",
+    "text": "Just admit you overslept bro 😒",
+    "time": "9:06 AM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Okay fine 🙄 I may or may not have snoozed 5 alarms",
+    "time": "9:06 AM"
+  },
+  {
+    "from": "me",
+    "text": "One day I’ll drag you out of bed myself",
+    "time": "9:07 AM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Kinky 😏",
+    "time": "9:07 AM"
+  },
+  {
+    "from": "me",
+    "text": "SHUT UP 😭",
+    "time": "9:08 AM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "But fr though, I’ll be there in 10. Got Red Bull and chips 🛒",
+    "time": "9:09 AM"
+  },
+  {
+    "from": "me",
+    "text": "You’re forgiven 😌",
+    "time": "9:10 AM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "So what’s the plan after chai? Full chill mode or chaos? 🤔",
+    "time": "9:11 AM"
+  },
+  {
+    "from": "me",
+    "text": "Little bit of both. Start with chai, end with existential crisis 🫠",
+    "time": "9:12 AM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Our brand 😎",
+    "time": "9:13 AM"
+  },
+  {
+    "from": "me",
+    "text": "Also I found this meme that’s LITERALLY you 💀",
+    "time": "9:14 AM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Drop it. I’m ready to be violated 😭",
+    "time": "9:14 AM"
+  },
+  {
+    "from": "me",
+    "text": "*sends cursed meme*",
+    "time": "9:15 AM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Wow. I feel personally attacked and seen at the same time 😩",
+    "time": "9:16 AM"
+  },
+  {
+    "from": "me",
+    "text": "Best friend duties 💅",
+    "time": "9:17 AM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "You’re the worst best friend ever. I love you 🫂",
+    "time": "9:18 AM"
+  },
+  {
+    "from": "me",
+    "text": "Love you too, idiot 🖤",
+    "time": "9:19 AM",
+    "status": "sent"
+  }
+]
+
   },
   {
     "id":3,
     "src": "https://randomuser.me/api/portraits/women/22.jpg",
-    "name": "Mei Ling",
+    "name": "Mom",
     "date": "Yesterday",
-    "lastMessage": "That sounds perfect. Let's do it.",
+    "lastMessage": "Love you too. Take care ❤️",
+    "status": "seen",
+    "messages": [
+  {
+    "from": "them",
+    "text": "Did you reach office safely?",
+    "time": "9:10 AM"
+  },
+  {
+    "from": "me",
+    "text": "Yeah mom, just sat down at my desk 🙂",
+    "time": "9:11 AM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Did you have breakfast or skipped it again?",
+    "time": "9:12 AM"
+  },
+  {
+    "from": "me",
+    "text": "I had a banana 😅",
+    "time": "9:13 AM",
     "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "That's not breakfast, sweetheart 😒",
+    "time": "9:14 AM"
+  },
+  {
+    "from": "me",
+    "text": "I know, I’ll eat something proper soon. Promise ❤️",
+    "time": "9:15 AM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Please take care of your health. Work can wait.",
+    "time": "9:16 AM"
+  },
+  {
+    "from": "them",
+    "text": "I made your favorite stuffed flatbreads today by the way 😋",
+    "time": "9:17 AM"
+  },
+  {
+    "from": "me",
+    "text": "Ugh now I’m hungry again 😂 save me some please!",
+    "time": "9:18 AM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Always. I’ll warm it up when you’re home.",
+    "time": "9:19 AM"
+  },
+  {
+    "from": "me",
+    "text": "You're the best ❤️",
+    "time": "9:20 AM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Don’t forget to drink water. Seriously!",
+    "time": "9:21 AM"
+  },
+  {
+    "from": "me",
+    "text": "Drinking right now because you said so 😇",
+    "time": "9:22 AM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Good boy 🥰 now get back to work.",
+    "time": "9:23 AM"
+  },
+  {
+    "from": "me",
+    "text": "Okay mom. Talk later. Love you 😘",
+    "time": "9:24 AM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Love you too. Take care ❤️",
+    "time": "9:25 AM"
+  }
+]
+
   },
   {
     "id":4,
     "src": "https://randomuser.me/api/portraits/men/12.jpg",
-    "name": "Liam O'Connor",
+    "name": "Crushhhhhh",
     "date": "Yesterday",
-    "lastMessage": "Haha, true that 😂",
+    "lastMessage": "And what if I already have? 👀",
+    "status": "sent",
+    "messages": [
+  {
+    "from": "me",
+    "text": "Hey stranger 👀",
+    "time": "8:10 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Do I know you?",
+    "time": "8:12 PM"
+  },
+  {
+    "from": "me",
+    "text": "Not yet. But that’s the plan 😉",
+    "time": "8:13 PM",
     "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Smooth. Is this how you talk to everyone?",
+    "time": "8:14 PM"
+  },
+  {
+    "from": "me",
+    "text": "Only the ones who look like they might ruin my sleep schedule 😅",
+    "time": "8:15 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Wow. Full-time flirt, part-time poet huh?",
+    "time": "8:17 PM"
+  },
+  {
+    "from": "me",
+    "text": "You noticed the poet part first. I'm taking that as a win 😎",
+    "time": "8:18 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Hmm… okay, I’ll admit. That was kinda clever.",
+    "time": "8:20 PM"
+  },
+  {
+    "from": "me",
+    "text": "Cleverness is my default mode. But I can switch to charming if needed 😏",
+    "time": "8:21 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Don’t push your luck 😅",
+    "time": "8:22 PM"
+  },
+  {
+    "from": "me",
+    "text": "Fair. How about I earn my luck instead?",
+    "time": "8:23 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "That depends. What exactly are you trying to earn here?",
+    "time": "8:25 PM"
+  },
+  {
+    "from": "me",
+    "text": "Hmm, let’s start with a smile. Maybe later, a coffee. Long-term? Who knows 😇",
+    "time": "8:26 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "You’re annoyingly good at this 😤",
+    "time": "8:27 PM"
+  },
+  {
+    "from": "me",
+    "text": "Blame it on the company. You bring out the best lines in me.",
+    "time": "8:28 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Okay fine. I *might* be smiling a little.",
+    "time": "8:30 PM"
+  },
+  {
+    "from": "me",
+    "text": "Mission accomplished ✅ but now I need to hear your laugh too. For science, of course.",
+    "time": "8:31 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "😂 you’re literally impossible",
+    "time": "8:32 PM"
+  },
+  {
+    "from": "me",
+    "text": "And yet... here you are, still replying 👀",
+    "time": "8:33 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Yeah yeah whatever 🙄",
+    "time": "8:34 PM"
+  },
+  {
+    "from": "me",
+    "text": "That’s code for: I’m kinda enjoying this 😏",
+    "time": "8:35 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Maybe. Don’t let it go to your head tho.",
+    "time": "8:36 PM"
+  },
+  {
+    "from": "me",
+    "text": "Too late. Already thinking of what our couple name would be 😌",
+    "time": "8:37 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Omg stoppp 😂😂",
+    "time": "8:38 PM"
+  },
+  {
+    "from": "me",
+    "text": "Fine fine. But just so you know — you’re very hard *not* to like.",
+    "time": "8:40 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Okay okay stop before I start crushing back 😳",
+    "time": "8:41 PM"
+  },
+  {
+    "from": "me",
+    "text": "Oh? You weren’t already? That’s embarrassing for me 😅",
+    "time": "8:42 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Shut up 😂 I didn’t say I wasn’t",
+    "time": "8:43 PM"
+  },
+  {
+    "from": "me",
+    "text": "Aha! Victory is mine 🏆",
+    "time": "8:44 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Alright, flirting king. You win this round.",
+    "time": "8:45 PM"
+  },
+  {
+    "from": "me",
+    "text": "Let’s call it even. But next round? Over coffee?",
+    "time": "8:46 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Hmm... maybe. Send me your best meme and I’ll think about it 😉",
+    "time": "8:47 PM"
+  },
+  {
+    "from": "me",
+    "text": "*sends 3 elite memes within 0.5 seconds*",
+    "time": "8:47 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Okay wow. This man came prepared 😂",
+    "time": "8:48 PM"
+  },
+  {
+    "from": "me",
+    "text": "Always. Especially when it’s for someone worth it ✨",
+    "time": "8:49 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "God you're dangerous 😩",
+    "time": "8:50 PM"
+  },
+  {
+    "from": "me",
+    "text": "Only if you fall for me 😈",
+    "time": "8:51 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "And what if I already have? 👀",
+    "time": "8:52 PM"
+  }
+]
+
   },
   {
     "id":5,
     "src": "https://randomuser.me/api/portraits/women/55.jpg",
-    "name": "Zara Sheikh",
+    "name": "Unknown Number",
     "date": "Fri",
-    "lastMessage": "I'll send the file tonight.",
+    "lastMessage": "No worries 👍",
+    "status": "delivered",
+    "messages": [
+  {
+    "from": "them",
+    "text": "Hey, is this Ayaan?",
+    "time": "5:03 PM"
+  },
+  {
+    "from": "me",
+    "text": "Yeah, who’s this?",
+    "time": "5:04 PM",
     "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Oh sorry, wrong number!",
+    "time": "5:05 PM"
+  },
+  {
+    "from": "me",
+    "text": "No worries 👍",
+    "time": "5:05 PM",
+    "status": "sent"
+  }
+]
+
   },
   {
     "id":6,
     "src": "https://randomuser.me/api/portraits/men/33.jpg",
-    "name": "Noah Kim",
+    "name": "Bhendi",
     "date": "Thu",
-    "lastMessage": "Did you get a chance to review the doc?",
+    "lastMessage": "Say when and I’m THERE. Snacks, anime, chaos. Let’s gooo 👏🍿",
+    "status": "seen",
+    "messages": [
+  {
+    "from": "them",
+    "text": "BROOO you watch anime right?!",
+    "time": "9:02 PM"
+  },
+  {
+    "from": "me",
+    "text": "BRO. I BREATHE anime 😤 what’s up??",
+    "time": "9:03 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "I just finished *Seven Deadly Sins* AND I HAVE QUESTIONS",
+    "time": "9:04 PM"
+  },
+  {
+    "from": "me",
+    "text": "Say LESS. Meliodas is an OP short king and I respect him 😤🔥",
+    "time": "9:05 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "LIKE HOW is he THAT powerful and still looks like he’s 12 😭",
+    "time": "9:06 PM"
+  },
+  {
+    "from": "me",
+    "text": "It’s the demon genes + plot armor combo 💀 also… Ban is GOATED.",
+    "time": "9:07 PM",
     "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "BAN AND ELAINE >>> Romeo & Juliet 😤",
+    "time": "9:08 PM"
+  },
+  {
+    "from": "me",
+    "text": "FACTS. Also have you watched *Hunter x Hunter*?",
+    "time": "9:09 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "I JUST DID!! Gon going full psycho in Chimera Ant arc??? GOOSEBUMPS 🥶",
+    "time": "9:10 PM"
+  },
+  {
+    "from": "me",
+    "text": "That transformation??? Peak rage. Also Meruem vs Netero?? 🫡🔥",
+    "time": "9:11 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "That fight was straight-up ART 🎨 and then Komugi??? 😭",
+    "time": "9:12 PM"
+  },
+  {
+    "from": "me",
+    "text": "Tore me apart bro. I was not okay for days 🥲",
+    "time": "9:13 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Okay okay BUT... have you watched *JoJo’s Bizarre Adventure*??",
+    "time": "9:14 PM"
+  },
+  {
+    "from": "me",
+    "text": "YESSS. JoJo is pure chaos and I LIVE for it. Dio is ICONIC 😈",
+    "time": "9:15 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "ZA WARUDO! TOKI WO TOMARE! ⏱️💥",
+    "time": "9:16 PM"
+  },
+  {
+    "from": "me",
+    "text": "Bro every JoJo pose is illegal in 17 countries 😂",
+    "time": "9:17 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "And yet we ALL try them in front of the mirror 😤💅",
+    "time": "9:18 PM"
+  },
+  {
+    "from": "me",
+    "text": "Okay wait... have you seen *No Game No Life*?? Colors, genius vibes, god complex — everything I want 💖",
+    "time": "9:19 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "YESSSS. Sora and Shiro are the ultimate sibling duo 🔥",
+    "time": "9:20 PM"
+  },
+  {
+    "from": "me",
+    "text": "They be winning wars with chess and trolling literal gods 😭",
+    "time": "9:21 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "STILL MAD WE DIDN’T GET A SEASON 2 THO 😤",
+    "time": "9:22 PM"
+  },
+  {
+    "from": "me",
+    "text": "Fr bro. My soul is still waiting 💀",
+    "time": "9:23 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Okay last one: *BTOOOM!* Thoughts?",
+    "time": "9:24 PM"
+  },
+  {
+    "from": "me",
+    "text": "Underrated GEM. The whole Battle Royale + emotional trauma?? INSANE",
+    "time": "9:25 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Right?? Felt like Hunger Games but with bombs and actual psychology 👀",
+    "time": "9:26 PM"
+  },
+  {
+    "from": "me",
+    "text": "We seriously need to binge something together at this point 😤",
+    "time": "9:27 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Say when and I’m THERE. Snacks, anime, chaos. Let’s gooo 👏🍿",
+    "time": "9:28 PM"
+  }
+]
   },
   {
     "id":7,
     "src": "https://randomuser.me/api/portraits/women/40.jpg",
-    "name": "Sofia Rossi",
+    "name": "Pratima Gaihre",
     "date": "Wed",
-    "lastMessage": "Meeting at 3pm, don’t be late!",
+    "lastMessage": "No problem. Good luck with the notes!",
+    "status": "sent",
+    "messages": [
+  {
+    "from": "them",
+    "text": "Heyyy 👋 Do you have today's Physics notes? I had to leave early 😩",
+    "time": "8:15 PM"
+  },
+  {
+    "from": "me",
+    "text": "Yeah I have them. Want me to send the pics?",
+    "time": "8:16 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Omg yes please! You’re a lifesaver 😇",
+    "time": "8:17 PM"
+  },
+  {
+    "from": "me",
+    "text": "*sends 5 photos* Let me know if you can’t read any page.",
+    "time": "8:18 PM",
     "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Wow your handwriting is actually kinda cute 😏",
+    "time": "8:19 PM"
+  },
+  {
+    "from": "me",
+    "text": "Haha thanks, I guess. Just tried to keep it neat.",
+    "time": "8:20 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Do you always take notes this perfectly or just when I miss class? 👀",
+    "time": "8:21 PM"
+  },
+  {
+    "from": "me",
+    "text": "Nah, I take notes like this every day. Habit.",
+    "time": "8:22 PM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Hmm so reliable... dangerous combo 👀🫣",
+    "time": "8:23 PM"
+  },
+  {
+    "from": "me",
+    "text": "Lol anyway, let me know if you need the rest of the week too.",
+    "time": "8:24 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "So serious all the time 😅 you ever chill or just live in study mode?",
+    "time": "8:25 PM"
+  },
+  {
+    "from": "me",
+    "text": "Haha just trying to stay on track. Boards aren’t gonna ace themselves 😅",
+    "time": "8:26 PM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Okay okay Mr. Focused 😤 don’t worry, I won’t distract you... much 😇",
+    "time": "8:27 PM"
+  },
+  {
+    "from": "me",
+    "text": "Appreciate it lol. Gonna get back to finishing today's assignments. Let me know if you need help with anything.",
+    "time": "8:28 PM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Alright, won’t bug you 😌 thanks again!",
+    "time": "8:29 PM"
+  },
+  {
+    "from": "me",
+    "text": "No problem. Good luck with the notes!",
+    "time": "8:30 PM",
+    "status": "delivered"
+  }
+]
+
   },
   {
     "id":8,
     "src": "https://randomuser.me/api/portraits/men/21.jpg",
-    "name": "Aditya Verma",
+    "name": "Classmate Jamal",
     "date": "Tue",
-    "lastMessage": "Call me when you're free.",
+    "lastMessage": "We rise above this clown college one project at a time 🤝",
+    "status": "delivered",
+    "messages": [
+  {
+    "from": "them",
+    "text": "Bro tell me why college feels like it’s actively trying to kill my love for coding 😩",
+    "time": "10:01 AM"
+  },
+  {
+    "from": "me",
+    "text": "Because it IS 💀 3-hour lectures for theory and not even one decent project-based course.",
+    "time": "10:03 AM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Fr bro, they teaching C like it’s 1999. Meanwhile companies want React, Node, DevOps, AI, full-stack, and your soul 💀",
+    "time": "10:04 AM"
+  },
+  {
+    "from": "me",
+    "text": "Exactly 😭 I had to learn everything useful from YouTube and Reddit.",
+    "time": "10:06 AM",
     "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Same. Speaking of which — I wanna start a side project. Just for learning and portfolio. Got any ideas?",
+    "time": "10:07 AM"
+  },
+  {
+    "from": "me",
+    "text": "Yessir 💡 Few I’m thinking about:\n1. Simple WhatsApp clone (UI + chats)\n2. Resume builder web app\n3. Real-time chat app using socket.io\n4. AI image caption generator using Hugging Face\n5. Personal habit tracker (React + Firebase)",
+    "time": "10:09 AM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Bro stop I need to steal all those 😭 the resume builder sounds actually useful",
+    "time": "10:10 AM"
+  },
+  {
+    "from": "me",
+    "text": "Yeah and you can go extra — add templates, export as PDF, and auto-LinkedIn parser maybe 🔥",
+    "time": "10:11 AM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Aight I’m sold. Let’s build that together or parallel?",
+    "time": "10:12 AM"
+  },
+  {
+    "from": "me",
+    "text": "Parallel for now, we’ll share pain later 😂",
+    "time": "10:13 AM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "Bet. Also what skill are you focusing on rn? I feel like I keep jumping around.",
+    "time": "10:14 AM"
+  },
+  {
+    "from": "me",
+    "text": "Right now I’m doing:\n- React deep dive\n- Git/GitHub properly\n- And brushing DSA just for interviews 😩",
+    "time": "10:15 AM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "DSA is pain bro. I do 5 leetcode questions and suddenly I need a nap 😭",
+    "time": "10:16 AM"
+  },
+  {
+    "from": "me",
+    "text": "No fr, one medium-level tree question and I’m contemplating my life choices.",
+    "time": "10:17 AM",
+    "status": "seen"
+  },
+  {
+    "from": "them",
+    "text": "Lowkey I feel like college should just chill on outdated junk and teach us dev workflows, APIs, Git, deployment… you know, real world sh*t.",
+    "time": "10:18 AM"
+  },
+  {
+    "from": "me",
+    "text": "Facts. Bro we’re gonna graduate and still Google 'how to center a div' 💀",
+    "time": "10:19 AM",
+    "status": "sent"
+  },
+  {
+    "from": "them",
+    "text": "LMAO that’s eternal 😂 Anyway, we should make a Notion board and dump all these ideas.",
+    "time": "10:20 AM"
+  },
+  {
+    "from": "me",
+    "text": "I already made one, will share link. Let’s pick one and commit 1 hour daily.",
+    "time": "10:21 AM",
+    "status": "delivered"
+  },
+  {
+    "from": "them",
+    "text": "Brooo this is why you’re top G. Let’s gooo 🚀",
+    "time": "10:22 AM"
+  },
+  {
+    "from": "me",
+    "text": "We rise above this clown college one project at a time 🤝",
+    "time": "10:23 AM",
+    "status": "sent"
+  }
+]
+
   },
   {
     "id":9,
@@ -69,7 +1003,8 @@
     "name": "Emily Clarke",
     "date": "Mon",
     "lastMessage": "Thanks again for your help!",
-    "status": "seen"
+    "status": "seen",
+    "messages":[]
   },
   {
     "id":10,
@@ -77,6 +1012,7 @@
     "name": "Jamal Peterson",
     "date": "Sun",
     "lastMessage": "Got it. Will update soon.",
-    "status": "sent"
+    "status": "sent",
+    "messages":[]
   }
 ]
