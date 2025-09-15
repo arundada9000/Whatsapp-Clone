@@ -8,11 +8,12 @@ import { LuArchive } from "react-icons/lu";
 import { IoSettingsOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 
-const Sidebar = () => {
+const Sidebar = ({ settingOpen, setSettingOpen }) => {
   const [sideBarOpen, setSideBarOpen] = useState(false);
   const handleHamburgerClick = () => {
     setSideBarOpen(!sideBarOpen);
   };
+
   return (
     <div
       className={`fixed top-8 pt-8 left-0 bottom-0 z-40 ${
@@ -61,7 +62,7 @@ const Sidebar = () => {
                 <div className="border-1 border-white/20"></div>
               </div>
             </div>
-            <div>
+            <div onClick={() => setSettingOpen(!settingOpen)}>
               <div className="w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4">
                 <IoSettingsOutline
                   style={{ fontSize: "18px", cursor: "pointer" }}

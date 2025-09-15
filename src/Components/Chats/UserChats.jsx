@@ -35,7 +35,6 @@ const UserChats = ({ fullChatData, setFullChatData }) => {
     <div className="flex flex-col py-3">
       {data.map((message) => {
         const { id, src, name, date, status, messages } = message;
-        console.log(messages);
 
         const lastMessage =
           messages.length > 0

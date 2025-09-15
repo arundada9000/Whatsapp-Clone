@@ -368,7 +368,7 @@
   },
   {
     "id":4,
-    "src": "https://randomuser.me/api/portraits/men/12.jpg",
+    "src": "https://randomuser.me/api/portraits/women/55.jpg ",
     "name": "Crushhhhhh",
     "date": "Yesterday",
     "lastMessage": "And what if I already have? 👀",
@@ -588,7 +588,7 @@
   },
   {
     "id":5,
-    "src": "https://randomuser.me/api/portraits/women/55.jpg",
+    "src": "https://randomuser.me/api/portraits/men/12.jpg",
     "name": "Unknown Number",
     "date": "Fri",
     "lastMessage": "No worries 👍",
