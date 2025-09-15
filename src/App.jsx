@@ -7,6 +7,9 @@ import Setting from "./Components/Setting/Setting";
 function App() {
   const [fullChatData, setFullChatData] = useState([]);
   const [settingOpen, setSettingOpen] = useState(false);
+  const [bg, setBackground] = useState(
+    "bg-[url('/chat-backgrounds/chat-bg.jpg')]"
+  );
   return (
     <>
       <Header></Header>
@@ -18,8 +21,12 @@ function App() {
         fullChatData={fullChatData}
         setFullChatData={setFullChatData}
       />
-      <FullChat fullChatData={fullChatData} setFullChatData={setFullChatData} />
-      <Setting settingOpen={settingOpen} />
+      <FullChat
+        fullChatData={fullChatData}
+        setFullChatData={setFullChatData}
+        bg={bg}
+      />
+      <Setting settingOpen={settingOpen} setBackground={setBackground} />
     </>
   );
 }
