@@ -4,7 +4,7 @@ import { VscSymbolColor } from "react-icons/vsc";
 const Personalization = ({ setBackground }) => {
   return (
     <div className="flex flex-col gap-4 overflow-y-auto h-full">
-      <h1 className="text-2xl mb-2">Personalization</h1>
+      <h1 className="text-xl mb-2">Personalization</h1>
       <div>
         <h2>Theme</h2>
         <h3 className="text-[14px] text-gray-300/60">App color theme</h3>

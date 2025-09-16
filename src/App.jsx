@@ -7,6 +7,7 @@ import Setting from "./Components/Setting/Setting";
 function App() {
   const [fullChatData, setFullChatData] = useState([]);
   const [settingOpen, setSettingOpen] = useState(false);
+  const [activeTab, setActiveTab] = useState("General");
   const [bg, setBackground] = useState(
     "bg-[url('/chat-backgrounds/chat-bg.jpg')]"
   );
@@ -16,6 +17,8 @@ function App() {
       <Sidebar
         settingOpen={settingOpen}
         setSettingOpen={setSettingOpen}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
       ></Sidebar>
       <AllChatBox
         fullChatData={fullChatData}
@@ -26,7 +29,12 @@ function App() {
         setFullChatData={setFullChatData}
         bg={bg}
       />
-      <Setting settingOpen={settingOpen} setBackground={setBackground} />
+      <Setting
+        settingOpen={settingOpen}
+        setBackground={setBackground}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
     </>
   );
 }

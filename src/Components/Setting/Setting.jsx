@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { LuLaptopMinimal } from "react-icons/lu";
 import { IoKeyOutline } from "react-icons/io5";
 import { RiChatSmile2Line } from "react-icons/ri";
@@ -20,9 +20,7 @@ import Shortcuts from "./Shortcuts";
 import Help from "./Help";
 import Profile from "./Profile";
 
-const Setting = ({ settingOpen, setBackground }) => {
-  const [activeTab, setActiveTab] = useState("General");
-
+const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
   return (
     <div
       className={`flex rounded-sm fixed bottom-1 left-[50px] z-40 text-white  ${
@@ -183,7 +181,9 @@ const Setting = ({ settingOpen, setBackground }) => {
         {activeTab === "Chats" && <Chats />}
         {activeTab === "VideoVoice" && <VideoVoice />}
         {activeTab === "Notifications" && <Notifications />}
-        {activeTab === "Personalization" && <Personalization setBackground={setBackground} />}
+        {activeTab === "Personalization" && (
+          <Personalization setBackground={setBackground} />
+        )}
         {activeTab === "Storage" && <Storage />}
         {activeTab === "Shortcuts" && <Shortcuts />}
         {activeTab === "Help" && <Help />}

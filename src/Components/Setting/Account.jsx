@@ -12,7 +12,7 @@ const Account = () => {
   return (
     <div className="flex flex-col gap-5 overflow-auto">
       <div className="flex flex-col gap-2">
-        <h1 className="text-2xl">Account</h1>
+        <h1 className="text-xl">Account</h1>
         <h2>Privacy</h2>
         <i className="font-normal ">Managed on your phone</i>
         <p className="text-sm">

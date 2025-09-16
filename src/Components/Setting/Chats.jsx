@@ -4,7 +4,7 @@ import { PiDesktopTowerLight } from "react-icons/pi";
 const Chats = () => {
   return (
     <div className="flex flex-col gap-6 overflow-auto">
-      <h1 className="text-2xl">Chats</h1>
+      <h1 className="text-xl">Chats</h1>
       <div>
         <h2 className="text-xl">Chat history</h2>
         <div className="flex items-center text-sm gap-2.5">
