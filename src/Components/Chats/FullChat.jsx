@@ -20,19 +20,39 @@ const FullChat = ({
   bg,
 }) => {
   const [typedValue, setTypedValue] = useState("");
+  const [messagesState, setMessagesState] = useState([]);
   const messagesEndRef = useRef(null);
+
+  useEffect(() => {
+    setMessagesState(fullChatData.messages || []);
+  }, [fullChatData]);
 
   useEffect(() => {
     if (messagesEndRef.current) {
       messagesEndRef.current.scrollTop = messagesEndRef.current.scrollHeight;
     }
-  }, [fullChatData.messages]);
+  }, [messagesState]);
 
   useEffect(() => {
     setFullChatData(fullChatData);
   }, [fullChatData, setFullChatData]);
 
   const { src, name, messages } = fullChatData;
+
+  const handleSendMessage = (from = "me") => {
+    if (!typedValue.trim()) return;
+    const newMessage = {
+      from,
+      text: typedValue,
+      time: new Date().toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+      }),
+      status: from === "me" ? "sent" : undefined,
+    };
+    setMessagesState((prev) => [...prev, newMessage]);
+    setTypedValue("");
+  };
 
   if (fullChatData.length === 0)
     return (
@@ -110,12 +130,12 @@ const FullChat = ({
 
       {/* Messages */}
       <div ref={messagesEndRef} className="p-4 overflow-auto pb-14">
-        {messages.length === 0 ? (
+        {messagesState.length === 0 ? (
           <div className="text-center text-gray-400 mt-10">
             Start a conversation
           </div>
         ) : (
-          messages.map((message, index) => {
+          messagesState.map((message, index) => {
             const { from, text, time, status } = message;
 
             return (
@@ -191,12 +211,24 @@ const FullChat = ({
             onChange={(e) => {
               setTypedValue(e.target.value);
             }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && e.ctrlKey) {
+                e.preventDefault();
+                handleSendMessage("them");
+              } else if (e.key === "Enter") {
+                e.preventDefault();
+                handleSendMessage("me");
+              }
+            }}
             type="text"
             placeholder="Type a message"
             className="outline-none focus:outline-none p-2"
           />
         </div>
-        <div className="flex items-center justify-center p-3 cursor-pointer hover:bg-[rgba(64,64,64,255)] rounded-md">
+        <div
+          onClick={() => handleSendMessage("me")}
+          className="flex items-center justify-center p-3 cursor-pointer hover:bg-[rgba(64,64,64,255)] rounded-md"
+        >
           {typedValue === "" && (
             <PiMicrophoneLight
               style={{
@@ -220,13 +252,12 @@ const FullChat = ({
 };
 export default FullChat;
 
-
 // Smooth scrolling instead of jump
 // useEffect(() => {
 //   if (messagesEndRef.current) {
 //     messagesEndRef.current.scrollTo({
 //       top: messagesEndRef.current.scrollHeight,
-//       behavior: "smooth" 
+//       behavior: "smooth"
 //     });
 //   }
 // }, [fullChatData.messages]);
