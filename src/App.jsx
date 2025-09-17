@@ -14,6 +14,7 @@ import FullArchive from "./Components/Archive/FullArchive";
 import Setting from "./Components/Setting/Setting";
 function App() {
   const sidebarRef = useRef(null);
+
   const [activeSidebar, setActiveSidebar] = useState("chats");
   const [fullChatData, setFullChatData] = useState([]);
   const [settingOpen, setSettingOpen] = useState(false);

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { CiVideoOn } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
@@ -9,6 +9,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoLockClosedOutline } from "react-icons/io5";
 import { IoCheckmark } from "react-icons/io5";
 import { IoCheckmarkDoneOutline } from "react-icons/io5";
+import { VscSend } from "react-icons/vsc";
 
 const FullChat = ({
   fullChatData = {
@@ -18,6 +19,15 @@ const FullChat = ({
   setFullChatData,
   bg,
 }) => {
+  const [typedValue, setTypedValue] = useState("");
+  const messagesEndRef = useRef(null);
+
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollTop = messagesEndRef.current.scrollHeight;
+    }
+  }, [fullChatData.messages]);
+
   useEffect(() => {
     setFullChatData(fullChatData);
   }, [fullChatData, setFullChatData]);
@@ -99,7 +109,7 @@ const FullChat = ({
       </div>
 
       {/* Messages */}
-      <div className="p-4 overflow-auto pb-14">
+      <div ref={messagesEndRef} className="p-4 overflow-auto pb-14">
         {messages.length === 0 ? (
           <div className="text-center text-gray-400 mt-10">
             Start a conversation
@@ -177,21 +187,46 @@ const FullChat = ({
         </div>
         <div className="flex-1">
           <input
+            value={typedValue}
+            onChange={(e) => {
+              setTypedValue(e.target.value);
+            }}
             type="text"
             placeholder="Type a message"
             className="outline-none focus:outline-none p-2"
           />
         </div>
         <div className="flex items-center justify-center p-3 cursor-pointer hover:bg-[rgba(64,64,64,255)] rounded-md">
-          <PiMicrophoneLight
-            style={{
-              color: "white",
-              fontSize: "20px",
-            }}
-          />
+          {typedValue === "" && (
+            <PiMicrophoneLight
+              style={{
+                color: "white",
+                fontSize: "20px",
+              }}
+            />
+          )}
+          {typedValue !== "" && (
+            <VscSend
+              style={{
+                color: "white",
+                fontSize: "20px",
+              }}
+            />
+          )}
         </div>
       </div>
     </div>
   );
 };
 export default FullChat;
+
+
+// Smooth scrolling instead of jump
+// useEffect(() => {
+//   if (messagesEndRef.current) {
+//     messagesEndRef.current.scrollTo({
+//       top: messagesEndRef.current.scrollHeight,
+//       behavior: "smooth" 
+//     });
+//   }
+// }, [fullChatData.messages]);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { PiChatCircleDots } from "react-icons/pi";
 import { IoCallOutline } from "react-icons/io5";
@@ -22,8 +22,27 @@ const Sidebar = ({
     setSideBarOpen(!sideBarOpen);
   };
 
+  const popupRef = useRef(null);
+
+ useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (popupRef.current && !popupRef.current.contains(event.target)) {
+      setSideBarOpen(false);
+    }
+  };
+
+  if (sideBarOpen) {
+    document.addEventListener("mousedown", handleClickOutside);
+  }
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, [sideBarOpen]);
+
+
   return (
     <div
+      ref={popupRef}
       className={`fixed top-8 pt-8 left-0 bottom-0 z-40 ${
         sideBarOpen
           ? "w-[220px] bg-[rgba(47,48,45,255)]"

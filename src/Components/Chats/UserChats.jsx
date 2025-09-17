@@ -7,6 +7,7 @@ const UserChats = ({ setFullChatData }) => {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
+  const [activeChat, setActiveChat] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -43,9 +44,14 @@ const UserChats = ({ setFullChatData }) => {
             : "Start a conversation";
         return (
           <div
-            onClick={() => setFullChatData(message)}
+            onClick={() => {
+              setFullChatData(message);
+              setActiveChat(id);
+            }}
             key={id}
-            className="flex gap-3 items-center hover:bg-[rgba(58,58,58,255)] rounded-lg py-3 px-3 cursor-pointer text-sm flex-1"
+            className={`flex gap-3 items-center hover:bg-[rgba(58,58,58,255)] rounded-lg py-3 px-3 cursor-pointer text-sm flex-1
+              ${activeChat === id ? "bg-[rgba(64,64,64,255)]" : ""}
+              `}
           >
             <div className="flex items-center justify-center flex-shrink-0">
               <img
