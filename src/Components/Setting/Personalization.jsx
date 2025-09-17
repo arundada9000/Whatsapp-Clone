@@ -90,7 +90,12 @@ const Personalization = ({ setBackground }) => {
           ArunApp Doodle
         </label>
       </div>
-      <button className="px-3 py-1.5 bg-[rgba(60,60,60,255)] w-[120px] rounded-lg">
+      <button
+        onClick={() =>
+          setBackground("bg-[url('/chat-backgrounds/chat-bg.jpg')]")
+        }
+        className="px-3 py-1.5 bg-[rgba(60,60,60,255)] w-[120px] rounded-lg cursor-pointer"
+      >
         Reset
       </button>
       <div className="flex flex-col gap-1.5">

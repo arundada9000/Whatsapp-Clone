@@ -8,7 +8,7 @@ const Header = () => {
         <FaWhatsapp
           style={{ fontSize: "25px", cursor: "pointer", color: "#25d366" }}
         />
-        <span>Whatsapp</span>
+        <span>ArunApp</span>
       </div>
     </div>
   );

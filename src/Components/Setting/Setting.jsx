@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { LuLaptopMinimal } from "react-icons/lu";
 import { IoKeyOutline } from "react-icons/io5";
 import { RiChatSmile2Line } from "react-icons/ri";
@@ -20,10 +20,41 @@ import Shortcuts from "./Shortcuts";
 import Help from "./Help";
 import Profile from "./Profile";
 
-const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
+const Setting = ({
+  sidebarRef,
+  settingOpen,
+  setSettingOpen,
+  setBackground,
+  activeTab,
+  setActiveTab,
+}) => {
+  const popupRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const clickedOutsidePopup =
+        popupRef.current && !popupRef.current.contains(event.target);
+      const clickedOutsideSidebar =
+        sidebarRef.current && !sidebarRef.current.contains(event.target);
+
+      if (clickedOutsidePopup && clickedOutsideSidebar) {
+        setSettingOpen(false);
+      }
+    };
+
+    if (settingOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [settingOpen, setSettingOpen, sidebarRef]);
+
   return (
     <div
-      className={`flex rounded-sm fixed bottom-1 left-[50px] z-40 text-white  ${
+      ref={popupRef}
+      className={`flex rounded-sm fixed bottom-1 left-[45px] z-40 text-white  ${
         settingOpen ? "block" : "hidden"
       }`}
     >
@@ -39,7 +70,7 @@ const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
           `}
         >
           <div
-            className={` ${
+            className={` transition-all duration-150 ${
               activeTab === "General"
                 ? "border-l-3 border-[rgba(29,170,97,255)]"
                 : " border-l-0"
@@ -53,7 +84,7 @@ const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
           className=" py-2 px-1 text-md cursor-pointer flex gap-3 rounded-sm hover:bg-[rgba(59,60,59,255)]"
         >
           <div
-            className={` ${
+            className={` transition-all duration-150 ${
               activeTab === "Account"
                 ? "border-l-3 border-[rgba(29,170,97,255)]"
                 : " border-transparent"
@@ -67,7 +98,7 @@ const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
           className=" py-2 px-1 text-md cursor-pointer flex gap-3 rounded-sm hover:bg-[rgba(59,60,59,255)]"
         >
           <div
-            className={` ${
+            className={` transition-all duration-150 ${
               activeTab === "Chats"
                 ? "border-l-3 border-[rgba(29,170,97,255)]"
                 : " border-transparent"
@@ -81,7 +112,7 @@ const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
           className=" py-2 px-1 text-md cursor-pointer flex gap-3 rounded-sm hover:bg-[rgba(59,60,59,255)]"
         >
           <div
-            className={` ${
+            className={` transition-all duration-150 ${
               activeTab === "VideoVoice"
                 ? "border-l-3 border-[rgba(29,170,97,255)]"
                 : " border-transparent"
@@ -95,7 +126,7 @@ const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
           className=" py-2 px-1 text-md cursor-pointer flex gap-3 rounded-sm hover:bg-[rgba(59,60,59,255)]"
         >
           <div
-            className={` ${
+            className={` transition-all duration-150 ${
               activeTab === "Notifications"
                 ? "border-l-3 border-[rgba(29,170,97,255)]"
                 : " border-transparent"
@@ -109,7 +140,7 @@ const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
           className=" py-2 px-1 text-md cursor-pointer flex gap-3 rounded-sm hover:bg-[rgba(59,60,59,255)]"
         >
           <div
-            className={` ${
+            className={` transition-all duration-150 ${
               activeTab === "Personalization"
                 ? "border-l-3 border-[rgba(29,170,97,255)]"
                 : " border-transparent"
@@ -123,7 +154,7 @@ const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
           className=" py-2 px-1 text-md cursor-pointer flex gap-3 rounded-sm hover:bg-[rgba(59,60,59,255)]"
         >
           <div
-            className={` ${
+            className={` transition-all duration-150 ${
               activeTab === "Storage"
                 ? "border-l-3 border-[rgba(29,170,97,255)]"
                 : " border-transparent"
@@ -137,7 +168,7 @@ const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
           className=" py-2 px-1 text-md cursor-pointer flex gap-3 rounded-sm hover:bg-[rgba(59,60,59,255)]"
         >
           <div
-            className={` ${
+            className={` transition-all duration-150 ${
               activeTab === "Shortcuts"
                 ? "border-l-3 border-[rgba(29,170,97,255)]"
                 : " border-transparent"
@@ -151,7 +182,7 @@ const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
           className=" py-2 px-1 text-md cursor-pointer flex gap-3 rounded-sm hover:bg-[rgba(59,60,59,255)]"
         >
           <div
-            className={` ${
+            className={` transition-all duration-150 ${
               activeTab === "Help"
                 ? "border-l-3 border-[rgba(29,170,97,255)]"
                 : " border-transparent"
@@ -165,7 +196,7 @@ const Setting = ({ settingOpen, setBackground, activeTab, setActiveTab }) => {
           className="mt-22 py-2 px-1 text-sm cursor-pointer flex gap-3 rounded-sm hover:bg-[rgba(59,60,59,255)]"
         >
           <div
-            className={` ${
+            className={` transition-all duration-150 ${
               activeTab === "Profile"
                 ? "border-l-3 border-[rgba(29,170,97,255)]"
                 : " border-transparent"

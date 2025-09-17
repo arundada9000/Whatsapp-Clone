@@ -2,7 +2,7 @@
   {
     "id":1,
     "src": "https://randomuser.me/api/portraits/women/68.jpg",
-    "name": "Pooja Pandey",
+    "name": "Pooju",
     "date": "12:45 PM",
     "lastMessage": "Good Night",
     "status": "seen",
@@ -1000,7 +1000,7 @@
   {
     "id":9,
     "src": "https://randomuser.me/api/portraits/women/18.jpg",
-    "name": "Emily Clarke",
+    "name": "Karuna Pyakurel",
     "date": "Mon",
     "lastMessage": "Thanks again for your help!",
     "status": "seen",
@@ -1009,7 +1009,7 @@
   {
     "id":10,
     "src": "https://randomuser.me/api/portraits/men/66.jpg",
-    "name": "Jamal Peterson",
+    "name": "Chris Hemsworth",
     "date": "Sun",
     "lastMessage": "Got it. Will update soon.",
     "status": "sent",

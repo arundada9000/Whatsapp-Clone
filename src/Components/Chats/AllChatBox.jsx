@@ -4,9 +4,9 @@ import { IoCreateOutline } from "react-icons/io5";
 import { IoFilterOutline } from "react-icons/io5";
 import { VscSearch } from "react-icons/vsc";
 
-const AllChatBox = ({ fullChatData, setFullChatData }) => {
+const AllChatBox = ({ setFullChatData }) => {
   return (
-    <div className="min-h-screen pl-[61px] pt-[57px] max-h-screen overflow-auto w-[400px] bg-[rgba(44,44,44,255)] text-white p-6 flex flex-col">
+    <div className="min-h-screen pl-[61px] pt-[57px] max-h-screen overflow-auto w-[400px] bg-[rgba(44,44,44,255)] text-white p-6 flex flex-col border-r-1 border-black">
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-semibold">Chats</h1>
         <div className="flex items-center gap-1">

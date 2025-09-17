@@ -8,7 +8,15 @@ import { LuArchive } from "react-icons/lu";
 import { IoSettingsOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 
-const Sidebar = ({ settingOpen, setSettingOpen, activeTab, setActiveTab }) => {
+const Sidebar = ({
+  activeSidebar,
+  setActiveSidebar,
+  sidebarRef,
+  settingOpen,
+  setSettingOpen,
+  activeTab,
+  setActiveTab,
+}) => {
   const [sideBarOpen, setSideBarOpen] = useState(false);
   const handleHamburgerClick = () => {
     setSideBarOpen(!sideBarOpen);
@@ -22,39 +30,84 @@ const Sidebar = ({ settingOpen, setSettingOpen, activeTab, setActiveTab }) => {
           : "w-[45px] bg-[rgba(32,32,32,255)]"
       } overflow-x-hidden transition-all duration-100 ease-in-out`}
     >
-      <div className={` flex flex-col text-white w-[200px]`}>
+      <div className={`h-full flex flex-col text-white w-[200px]`}>
         <div
           onClick={handleHamburgerClick}
-          className="p-3 hover:bg-[rgba(45,45,45,255)] border-l-2 border-[rgba(27,157,90,255)]"
+          className="p-3 hover:bg-[rgba(45,45,45,255)]"
         >
           <RxHamburgerMenu style={{ fontSize: "18px", cursor: "pointer" }} />
         </div>
-        <div className="flex flex-col mt-8 ">
+        <div className="flex flex-col mt-8 flex-grow">
           <div>
-            <div className="w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4">
+            <div
+              onClick={() => setActiveSidebar("chats")}
+              className={`w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4
+              transition-all duration-300 ${
+                activeSidebar === "chats"
+                  ? "border-l-2 border-[rgba(27,157,90,255)] bg-[rgba(45,45,45,255)]"
+                  : ""
+              }
+              `}
+            >
               <PiChatCircleDots
                 style={{ fontSize: "18px", cursor: "pointer" }}
               />
               <p className="text-sm cursor-pointer">Chats</p>
             </div>
-            <div className="w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4">
+            <div
+              onClick={() => setActiveSidebar("calls")}
+              className={`w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4
+              transition-all duration-300 ${
+                activeSidebar === "calls"
+                  ? "border-l-2 border-[rgba(27,157,90,255)] bg-[rgba(45,45,45,255)]"
+                  : ""
+              }
+              `}
+            >
               <IoCallOutline style={{ fontSize: "18px", cursor: "pointer" }} />
               <p className="text-sm cursor-pointer">Calls</p>
             </div>
-            <div className="w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4">
+            <div
+              onClick={() => setActiveSidebar("status")}
+              className={`w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4
+              transition-all duration-300 ${
+                activeSidebar === "status"
+                  ? "border-l-2 border-[rgba(27,157,90,255)] bg-[rgba(45,45,45,255)]"
+                  : ""
+              }
+              `}
+            >
               <IoIosAddCircleOutline
                 style={{ fontSize: "18px", cursor: "pointer" }}
               />
               <p className="text-sm cursor-pointer">Status</p>
             </div>
           </div>
-          <div className="mt-10">
+          <div className="mt-auto">
             <div>
-              <div className="w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4">
+              <div
+                onClick={() => setActiveSidebar("star")}
+                className={`w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4 transition-all duration-300
+              ${
+                activeSidebar === "star"
+                  ? "border-l-2 border-[rgba(27,157,90,255)] bg-[rgba(45,45,45,255)]"
+                  : ""
+              }
+              `}
+              >
                 <CiStar style={{ fontSize: "18px", cursor: "pointer" }} />
                 <p className="text-sm cursor-pointer">Starred Message</p>
               </div>
-              <div className="w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4">
+              <div
+                onClick={() => setActiveSidebar("archive")}
+                className={`w-full p-3 hover:bg-[rgba(45,45,45,255)] flex items-center gap-4 transition-all duration-300
+              ${
+                activeSidebar === "archive"
+                  ? "border-l-2 border-[rgba(27,157,90,255)] bg-[rgba(45,45,45,255)]"
+                  : ""
+              }
+              `}
+              >
                 <LuArchive style={{ fontSize: "18px", cursor: "pointer" }} />
                 <p className="text-sm cursor-pointer">Archived Chats</p>
               </div>
@@ -62,7 +115,7 @@ const Sidebar = ({ settingOpen, setSettingOpen, activeTab, setActiveTab }) => {
                 <div className="border-1 border-white/20"></div>
               </div>
             </div>
-            <div>
+            <div ref={sidebarRef}>
               <div
                 onClick={() => {
                   setActiveTab("General");
