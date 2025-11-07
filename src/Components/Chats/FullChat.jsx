@@ -37,7 +37,7 @@ const FullChat = ({
     setFullChatData(fullChatData);
   }, [fullChatData, setFullChatData]);
 
-  const { src, name, messages } = fullChatData;
+  const { src, name } = fullChatData;
 
   const handleSendMessage = (from = "me") => {
     if (!typedValue.trim()) return;
